@@ -9,7 +9,7 @@
 #define COMMONSTRUCTURES_H_
 
 #include "ConfigReader.h"
-#include "nlohmann/json.hpp"
+#include "json.hpp"
 
 enum RequestPayloadFormat
 {
