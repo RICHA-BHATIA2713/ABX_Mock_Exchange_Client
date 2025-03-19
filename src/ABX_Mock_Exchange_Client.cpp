@@ -6,10 +6,16 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include <iostream>
-using namespace std;
+#include "GlobalMembers.h"
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	return 0;
+
+	InitializeGlobalMembers();
+
+    if (!GetABXClient()->create_connection())
+    {
+        return EXIT_FAILURE;
+    }
+
+	return EXIT_SUCCESS;
 }
