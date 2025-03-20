@@ -15,6 +15,9 @@
 void InitializeGlobalMembers();
 void DestroyGlobalMembers();
 
+void PrintSeqVector();
+void SortSeqVector();
+
 JSONWriter * GetJSONWriter();
 ABXClient * GetABXClient();
 vector<int> &GetSeqVector();

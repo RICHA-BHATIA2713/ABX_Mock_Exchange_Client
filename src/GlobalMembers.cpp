@@ -2,7 +2,7 @@
  * GlobalMembers.cpp
  *
  *  Created on: 6 Jan 2025
- *      Author: pritam
+ *      Author: Richa Bhatia
  */
 
 #include "GlobalMembers.h"
@@ -30,6 +30,17 @@ void DestroyGlobalMembers()
 	delete JSON_Writer; JSON_Writer = nullptr;
 }
 
+void PrintSeqVector()
+{
+	cout << "Printing Seq Number:";
+	for(auto &seq : GetSeqVector()) cout << seq << ",";
+	cout << endl;
+}
+
+void SortSeqVector()
+{
+	sort(GetSeqVector().begin(),GetSeqVector().end());
+}
 
 JSONWriter * GetJSONWriter() 	{return JSON_Writer;}
 ABXClient * GetABXClient()		{return client;}

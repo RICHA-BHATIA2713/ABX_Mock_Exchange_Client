@@ -34,6 +34,7 @@ int main() {
 		cerr << "Send Request Not done: type " << (int)RequestPayloadFormat::callType << endl;
 	}
 
+	PrintSeqVector();
 
     DestroyGlobalMembers();
 
