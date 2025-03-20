@@ -17,5 +17,7 @@ int main() {
         return EXIT_FAILURE;
     }
 
+    DestroyGlobalMembers();
+
 	return EXIT_SUCCESS;
 }
