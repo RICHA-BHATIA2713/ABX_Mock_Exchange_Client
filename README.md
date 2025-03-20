@@ -5,7 +5,7 @@ This project simulates a client interacting with an ABX mock exchange server. It
 ### Dependencies
 
 - **C++17** support in your compiler (e.g., GCC)
-- **Eclipse** IDE is used. The exe is in `ABX_Client_Application/Debug`
+- **Eclipse** IDE is used. The exe is in `ABX_Mock_Exchange_Client/Debug`
 - **Compilation Tools**: `g++` C++ compiler or `Eclipse IDE`
 
 ### Setup and Building the Project
@@ -17,11 +17,11 @@ Follow these steps to manually compile and run the project:
 Clone this repository to your local machine using `git`:
 
 ```bash
-git clone https://github.com/korepritam/ABX_Client_Application.git
-cd ABX_Client_Application/Deubg
+git clone https://github.com/RICHA-BHATIA2713/ABX_Mock_Exchange_Client.git
+cd ABX_Mock_Exchange_Client/Deubg
 make clean
 make -k all
-./ABX_Client_Application 1>out 2>err&
+./Start_ABX_Client.sh
 ```
 
 #### Key Points:
