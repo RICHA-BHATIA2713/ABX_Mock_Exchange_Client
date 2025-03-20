@@ -2,7 +2,7 @@
  * JSONWriter.h
  *
  *  Created on: 6 Jan 2025
- *      Author: pritam
+ *      Author: Richa Bhatia
  */
 
 #ifndef JSONWRITER_H_

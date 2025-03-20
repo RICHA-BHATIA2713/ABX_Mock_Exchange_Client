@@ -2,7 +2,7 @@
  * GlobalMembers.h
  *
  *  Created on: 6 Jan 2025
- *      Author: pritam
+ *      Author: Richa Bhatia
  */
 
 #ifndef GLOBALMEMBERS_H_

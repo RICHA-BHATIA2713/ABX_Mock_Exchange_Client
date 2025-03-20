@@ -10,13 +10,14 @@
 
 int main() {
 
+    cout << endl << "==== APPLICATION STARTED =====" << endl;
+
 	InitializeGlobalMembers();
 
     if (!GetABXClient()->create_connection())
     {
         return EXIT_FAILURE;
     }
-
 
     //1. Request All Feed Packets.
     Request all_packet_request((int)RequestPayloadFormat::callType);
@@ -36,7 +37,7 @@ int main() {
 
 	PrintSeqVector();
 
-	//Connection closed create connection again
+	//Connection closed by ABX create connection again
     if (!GetABXClient()->create_connection())
     {
         return EXIT_FAILURE;
@@ -66,7 +67,11 @@ int main() {
     	}
     }
 
+    SortSeqVector();
+    PrintSeqVector();
     DestroyGlobalMembers();
+
+    cout << endl << "==== APPLICATION FINISHED =====" << endl;
 
 	return EXIT_SUCCESS;
 }
